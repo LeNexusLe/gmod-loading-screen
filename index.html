@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
   <meta charset="UTF-8" />
-  <title></title>
+  <title>Loading...</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: -1;
+    }
+  </style>
 </head>
 <body>
-  <audio autoplay loop>
-    <source src="music/muzyka.mp3" type="audio/mpeg">
-  </audio>
+  <video autoplay loop>
+    <source src="video/Intro-0.1.mov" type="video/quicktime">
+    Twój przeglądarka nie obsługuje wideo.
+  </video>
 </body>
 </html>
